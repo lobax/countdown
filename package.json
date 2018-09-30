@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
+    "start": "node src/server.js",
+    "dev": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production"
   },
   "name": "countdown",
@@ -9,7 +10,9 @@
   "repository": "https://github.com/lobax/countdown.git",
   "author": "Kristian Alvarez Jörgensen <krijor@kth.se>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
