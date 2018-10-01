@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import ReactDom from "react-dom";
+import CountDown from './../presentational/countDown';
 
 class AppContainer extends Component {
   render() {
     return (
-      <h1>Hello World!</h1>
+      <CountDown
+      />
     );
   }
 }
